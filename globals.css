@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/font/inter.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+  --font-body: 'Inter', sans-serif;
+  --color-page: #0a0a0b;
+  --color-surface: #191a1c;
+  --color-surface-raised: #242528;
+  --color-border: #36383c;
+  --color-border-soft: #303236;
+  --color-text: #f2f2f3;
+  --color-muted: #a4a5a8;
+  --color-accent: #d5d6d8;
+  --color-accent-strong: #4a4c50;
+  --color-chip: #292b2e;
+  --color-chip-text: #c8c9cb;
+  --color-live: #fb7185;
+  --color-warning: #fbbf24;
+  --color-error-bg: #2b1c1e;
+  --color-error-border: #6b393d;
+  --color-error-text: #fecdd3;
+  --color-winner-start: #1e3829;
+  --color-winner-end: #1b2820;
+  --color-winner-border: #3d7252;
+  --color-loser-start: #3a2224;
+  --color-loser-end: #2a1d1f;
+  --color-loser-border: #7c4549;
+  --color-star-active: #f59e0b;
+  --color-star-inactive: #a4a5a8;
+}
+
+html {
+  scrollbar-gutter: stable;
+  background-color: var(--color-page);
+}
+
+body {
+  background-color: var(--color-page);
+  color: var(--color-text);
+}
+
+body,
+body * {
+  font-family: var(--font-body) !important;
+}
