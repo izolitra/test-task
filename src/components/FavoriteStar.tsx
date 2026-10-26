@@ -16,7 +16,7 @@ export function FavoriteStar({ active }: Props) {
 }
 
 const styles = StyleSheet.create({
-  icon: { width: 21, height: 21 },
+  icon: { width: 19, height: 19 },
   active: { tintColor: colors.starActive },
   inactive: { tintColor: colors.starInactive },
 });

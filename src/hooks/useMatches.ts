@@ -142,8 +142,8 @@ export function useMatches() {
       if (!mounted || active) return;
       active = true;
       if (inFlight) return;
-      if ((lastSuccessAt === 0 || Date.now() - lastSuccessAt >= POLL_INTERVAL_MS) &&
-          Date.now() >= nextAttemptAt) {
+      // При возвращении устаревшие данные важнее таймера после прошлой ошибки.
+      if (lastSuccessAt === 0 || Date.now() - lastSuccessAt >= POLL_INTERVAL_MS) {
         void load();
       } else {
         schedule();

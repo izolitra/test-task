@@ -7,7 +7,7 @@ export function FavoriteStar({ active }: Props) {
   const color = active ? 'var(--color-star-active)' : 'var(--color-star-inactive)';
 
   return (
-    <svg width="21" height="21" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
       <path
         d={starPath}
         fill={active ? color : 'none'}
